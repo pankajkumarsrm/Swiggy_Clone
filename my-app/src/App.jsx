@@ -2,6 +2,7 @@ import Category from "./components/Category";
 import Header from "./components/Header";
 import OnlineDelivery from "./components/OnlineDelivery";
 import TopRest from "./components/TopRest";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Category />
       <TopRest />
       <OnlineDelivery />
+      <Footer/>
     </>
   );
 }
