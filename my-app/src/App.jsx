@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import OnlineDelivery from "./components/OnlineDelivery";
 import TopRest from "./components/TopRest";
 import Footer from "./components/Footer";
+import TopFooter from "./components/TopFooter";
 
 function App() {
   return (
@@ -10,8 +11,12 @@ function App() {
       <Header></Header>
       <Category />
       <TopRest />
-      <OnlineDelivery />
-      <Footer/>
+      <OnlineDelivery/>
+
+      <TopFooter />
+
+      <Footer />
+      {/* </Header> */}
     </>
   );
 }

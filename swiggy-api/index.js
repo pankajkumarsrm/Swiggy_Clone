@@ -24,7 +24,7 @@ app.get("/categories", (req, res) => {
       return;
     }
 
-    // Parse JSON data
+    //Parse JSON data
     try {
       const categories = JSON.parse(data);
       res.json(categories);

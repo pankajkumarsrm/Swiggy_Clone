@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { RxCaretDown } from "react-icons/rx";
 import { IoIosSearch } from "react-icons/io";
 import { CiDiscount1 } from "react-icons/ci";
+import { IoCartOutline } from "react-icons/io5";
+import { IoHelpBuoyOutline } from "react-icons/io5";
+import { FaRegUser } from "react-icons/fa";
 
 export default function Header() {
   const [toggle, setToggle] = useState(false);
@@ -25,15 +28,15 @@ export default function Header() {
       sup: "NEW",
     },
     {
-      icon: "",
+      icon: <IoHelpBuoyOutline />,
       name: "Help",
     },
     {
-      icon: "",
+      icon: <FaRegUser />,
       name: "Sign In",
     },
     {
-      icon: "",
+      icon: <IoCartOutline />,
       name: "Cart",
       sup: "(2)",
     },

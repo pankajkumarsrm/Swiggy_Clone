@@ -18,12 +18,12 @@ export default function Category() {
 
   const nextSlide = () => {
     console.log(categories.length);
-    if (categories.length - 8 == slide) return false;
+    if (categories.length - 8 === slide) return false;
     setSlide(slide + 3);
   };
 
   const prevSlide = () => {
-    if (slide == 0) return false;
+    if (slide === 0) return false;
     setSlide(slide - 3);
   };
 
@@ -49,7 +49,7 @@ export default function Category() {
             </div>
           </div>
         </div>
-        <div className="flex  overflow-hidden">
+        <div className="flex  overflow-hidden ">
           {categories.map((cat, index) => {
             return (
               <div
@@ -62,7 +62,7 @@ export default function Category() {
             );
           })}
         </div>
-        <hr className='my-6 border-[1px]'/>
+        <hr className="my-6 border-[1px]" />
       </div>
     </>
   );

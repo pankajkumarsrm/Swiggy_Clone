@@ -3,6 +3,7 @@ import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 import Card from "./Card";
 
 export default function TopRest() {
+  // const [slide, setSlide] = useState(0);
   const [data, setData] = useState([]);
 
   const fetchTopResturant = async () => {
@@ -15,6 +16,17 @@ export default function TopRest() {
     fetchTopResturant();
   }, []);
 
+  const prevSlide = () => {
+    // console.log(data.lenght);
+    // if (slide === 0) return false;
+    // setSlide(slide - 3);
+  };
+  const nextSlide = () => {
+    // console.log(data.lenght);
+    // if (data.length - 8 === slide) return false;
+    // setSlide(slide + 3);
+  };
+
   return (
     <div className="max-w-[1200px] mx-auto ">
       <div className="flex items-center justify-between">
@@ -25,12 +37,14 @@ export default function TopRest() {
           <div
             className="cursor-pointer
             flex justify-center items-center w-[30px] h-[30px] bg-[#e8e8f1] rounded-full mx-2"
+            onClick={prevSlide}
           >
             <IoMdArrowBack />
           </div>
           <div
             className="cursor-pointer
             flex justify-center items-center w-[30px] h-[30px] bg-[#e8e8f1] rounded-full mx-2"
+            onClick={nextSlide}
           >
             <IoMdArrowForward />
           </div>
@@ -41,7 +55,7 @@ export default function TopRest() {
           return <Card {...d} key={i} />;
         })}
       </div>
-      <hr className="my-4 border-[1px]" />
+      <hr className="my-4 border-[5px]" />
     </div>
   );
 }
